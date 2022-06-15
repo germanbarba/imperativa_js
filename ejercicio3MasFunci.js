@@ -74,3 +74,40 @@ let puedeSubir = ( altura, vieneAcompañada)=>{
     }
 }
 console.log(puedeSubir(1.90, "false"))
+
+//una funcion que reciba 3 numeros y devuelva el promedio
+const calculaPromedio=(num1,num2,num3)=>(num1+num2+num3)/3;
+let promedioFinal=calculaPromedio(5,6,10);
+console.log(promedioFinal)
+
+//algoritmo para convertir una cantidad de pesos a dolares. Recibe
+//los pesos y recibe el valor del cambio
+let pesos=prompt("ingrese la cantidad de pesos a convertir: ");
+let dolar=prompt("ingrese el valor del dolar: ");
+
+const conversorMoneda=(cantidadPesos,valorDolar)=>cantidadPesos/valorDolar;
+console.log(`sus dolares en pesos equivalen a: ${conversorMoneda (+pesos, +dolar)}`)
+
+
+//calcular promedio alumno mayor o igual a 7 aprobado
+const calculaPromedio2=(nota1,nota2,nota3)=>{
+    let suma=nota1+nota2+nota3;
+    let promedio=suma/3
+
+    if(promedio>=7){
+        return "promocionado"
+    }else if(promedio){
+        return "desaprobado"
+    }
+}
+let promedioNotas=calculaPromedio2(5,2,2);
+console.log(promedioNotas);
+
+//tablas de multiplicar
+const mostraTablas=(numero)=>{
+    for(let i=1; i<=10; i++){
+        console.log(`${numero} * ${i} = ${numero*i}`)
+        //console.log(numero + "*" +i+"=" + (numero * i));
+    }
+}
+mostraTablas(8)
