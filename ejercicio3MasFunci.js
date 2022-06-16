@@ -111,3 +111,53 @@ const mostraTablas=(numero)=>{
     }
 }
 mostraTablas(8)
+//apartir del siguiemte array de edades nos solicitan realizar lo siguiente:
+//a. obtner en un arraay las edades menores de 18
+//b.mayores o igual a 18
+//c. igual a 18
+//const edades = [11,12,15,18,25,22,10,33,18,5];
+
+let arrDeEdadesMenores = [];
+let arrMayores = [];
+let arrIguales = [];
+
+let cradorArr = (arr)=>{
+    for (let i=0; i<arr.length; i++){
+        if(arr[i]<18){
+            arrDeEdadesMenores.push(arr[i]);
+        }else if(arr[i]===18){
+            arrIguales.push(arr[i]);
+        }else{
+            arrMayores.push(arr[i]);
+        }
+    }
+}
+console.log(cradorArr(edades));
+console.log(arrMayores);
+console.log(arrIguales);
+console.log(arrDeEdadesMenores);
+console.log("---------------------")
+
+//const edades = [11,12,15,18,25,22,10,33,18,5];
+let min = edades[0]; //El minimo por el momento es el primer elemento de nuestro array
+
+for(i=0;i<edades.length;i++){  //empezamos desde la 0 posicion  
+    if(edades[i]<min){   //preguntamos si el proximo elemento de nuestro array (posicion i) es menor que el min
+       (min=edades[i])   // si se cumple la condicion reemplazamos el valor de min por el valor que se encuentra en nuestro array en la posicion i
+    }
+}
+console.log(min); //una vez finalizado el recorrido y encontrado el menor valor lo mostramos por pantalla
+
+//ahora con una funcion
+const edades = [11,12,15,18,25,22,10,33,18,5,1];
+//ahora co una funcion
+const encontrarMenor=(edades)=>{
+    let menor=edades[0];
+    for(let i=0; i<edades.length; i++){
+        if(edades[i]<menor){
+            (menor=edades[i]);
+        }
+    }
+    return [menor]
+}
+console.log(encontrarMenor(edades))
