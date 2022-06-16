@@ -111,3 +111,4 @@ const mostraTablas=(numero)=>{
     }
 }
 mostraTablas(8)
+
