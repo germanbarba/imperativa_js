@@ -74,3 +74,12 @@ let puedeSubir = ( altura, vieneAcompañada)=>{
     }
 }
 console.log(puedeSubir(1.90, "false"))
+
+const loopDePares=(numero)=>{
+    for(i=0;i<=100;i++){
+        if (i+numero==0){
+            console.log(`el ${numero} es par`)
+        }
+    }
+}
+console.log(loopDePares(2))
