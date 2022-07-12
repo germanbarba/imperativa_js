@@ -33,4 +33,4 @@ let coincidencias=(frase,busqueda)=>{
 
 }
 console.log("numero de coincidencias en la frase: ",
-    coincidencias('hola, que Tal german, Soy GERMAN BARBOSA. german, german', 'german'));
+    coincidencias('hola, que Tal german, Soy GERMAN BARBOSA. german, german', 'tal'));
