@@ -35,4 +35,4 @@ let cuadrado = (numero)=>{
 
     return dibujo;
 }
-console.log(cuadrado(8))
+console.log(cuadrado(30))
